@@ -1,4 +1,4 @@
-# PersonalProjects
+# Personal Projects
 
 ### A-Level Rank Points Calculator
 I made an A-Level Rank Points Calculator that asks users to key in their A-Level Grades which then returns their rank points. I created the front-end with HTML and styled it with CSS. As for the back-end, I used Flask and Python. I am currently working on adding options to ask users for their subject combinations which then returns a list of courses they are eligible for in NUS, NTU and SMU.
