@@ -11,7 +11,7 @@ To explore automation, I had created a typeracing bot using Python with selenium
 ### Login System
 To understand more about databases, I created a simple login system website where users can create an account by asking for their names, emails and asks them to create a password. Then they can sign in into their account. This is done by data being stored on a database where data is created when a new account is created and data is retrieved when a user with an existing account logs in. Currently working on changing database from a CSV file to a SQL database.
 
-Disclaimer: HTML, CSS and JavaScript is a template taken from a free online source. Only the backend was developed by me.
+Disclaimer: The HTML, CSS and JavaScript files are a template taken from a free online source with a few minor changes I have made to suit this project. Only the backend was developed by me.
 
 ### Guess the Secret Number Game
 A game that asks the player to guess a secret randomly generated number. Coded using Python.
