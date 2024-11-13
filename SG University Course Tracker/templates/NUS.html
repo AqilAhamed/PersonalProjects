@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styleUni.css') }}">
+    <title>NUS Courses</title>
+</head>
+<body>
+    <div class="topnav">
+		<a class="active" href="/">Home</a>
+	</div>
+
+    <br><br><br><br><br><center><img src="data:image/png;base64,{{data}}"></center><br><br>
+    <center><p style="color:white; font-size: 17px;">Your Rank Points</p><div id = "rp_box"><p class = "rp">{{RP}}</p></div></center><br><br>
+    <p style="color:white; font-size: 30px; margin-left: 5%;">ELIGIBLE NUS COURSES</p>
+<center><table>
+    <tr>
+        <td style="font-size: 20px; background-color: #08FDD8; color: #1D1D1D; border-right: 2px solid #1D1D1D;"><b>Courses</b></td>
+        <th style="font-size: 20px; background-color: #08FDD8; color: #1D1D1D; border-left: 2px solid #1D1D1D;">Rank Points</th>
+    </tr>
+    {% for i in courses %}
+        <tr>
+            <td>{{i[0]}}</td>
+            <td><center>{{i[1]}}</center></td>
+        </tr>
+    {% endfor %}
+</table></center><br><br><br>
+</body>
+</html>

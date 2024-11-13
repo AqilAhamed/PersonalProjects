@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='retrieve.css') }}">
+    <title>SMU - Retrieve</title>
+</head>
+<body>
+    <div class="topnav">
+		<a class="active" href="/">Home</a>
+        <a class="active" href="/admin">Web Admin</a>
+        <a class="active" href="/admin/smu_delete">Delete</a>
+        <a class="active" href="/admin/smu_update">Update</a>
+        <a class="active" href="/admin/smu_insert">Insert</a>
+        <a class="active" href="/admin/smu_retrieve">Retrieve</a>
+	</div><br><br><br><br><br>
+
+    <center><table>
+        <center><div id = "instr_box"><p class = "instr">NOTE: IDs are always in chronological order and are unique. Each ID is a point of reference to its respective record when performing CRUD.</p></div></center><br><br><br>
+        <tr>
+            <th style="font-size: 20px; background-color: #08FDD8; color: #1D1D1D; border-right: 2px solid #1D1D1D;"><b>ID</b></th>
+            <td style="font-size: 20px; background-color: #08FDD8; color: #1D1D1D; border-right: 2px solid #1D1D1D; border-left: 2px solid #1D1D1D;"><b>Courses</b></td>
+            <th style="font-size: 20px; background-color: #08FDD8; color: #1D1D1D; border-left: 2px solid #1D1D1D;">Rank Points</th>
+        </tr>
+        {% for i in courses_and_rp %}
+        <tr>
+            <td><center>{{ i[0] }}</center></td>
+            <td>{{ i[1] }}</td>
+            <td><center>{{ i[2] }}</center></td>
+        </tr>
+        {% endfor %}
+    </table></center><br><br><br><br>
+</body>
+</html>

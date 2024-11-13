@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='admin.css') }}">
+    <title>Web Admin</title>
+</head>
+<body>
+    <div class="topnav">
+		<a class="active" href="/">Home</a>
+	</div><br><br><br><br>
+
+
+    <center><img src="{{ url_for('static',filename='img/NUS.png') }}"></center><br><br>
+    <form method="POST">
+        <center><div>
+        <button type="submit" name = "submit" class = "btn2" formaction="/admin/nus_retrieve">Retrieve</button>
+        <button type="submit" name = "submit" class = "btn2" formaction="/admin/nus_insert">Insert</button>
+        <button type="submit" name = "submit" class = "btn2" formaction="/admin/nus_update">Update</button>
+        <button type="submit" name = "submit" class = "btn2" formaction="/admin/nus_delete">Delete</button>
+        </div></center><br><br><br><br>
+    </form>
+
+    <center><img src="{{ url_for('static',filename='img/NTU.png') }}"></center><br><br>
+    <form method="POST">
+        <center><div>
+        <button type="submit" name = "submit" class = "btn2" formaction="/admin/ntu_retrieve">Retrieve</button>
+        <button type="submit" name = "submit" class = "btn2" formaction="/admin/ntu_insert">Insert</button>
+        <button type="submit" name = "submit" class = "btn2" formaction="/admin/ntu_update">Update</button>
+        <button type="submit" name = "submit" class = "btn2" formaction="/admin/ntu_delete">Delete</button>
+        </div></center><br><br><br><br>
+    </form>
+
+    <center><img src="{{ url_for('static',filename='img/SMU.png') }}"></center><br><br>
+    <form method="POST">
+        <center><div>
+        <button type="submit" name = "submit" class = "btn2" formaction="/admin/smu_retrieve">Retrieve</button>
+        <button type="submit" name = "submit" class = "btn2" formaction="/admin/smu_insert">Insert</button>
+        <button type="submit" name = "submit" class = "btn2" formaction="/admin/smu_update">Update</button>
+        <button type="submit" name = "submit" class = "btn2" formaction="/admin/smu_delete">Delete</button>
+        </div></center><br><br><br><br>
+    </form>
+
+</body>
+</html>

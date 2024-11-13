@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styleIndex.css') }}">
+    <title>SG CourseTracker</title>
+</head>
+<body>
+
+	<!--Nav Bar-->
+	<div class="topnav">
+		<a class="active" href="/admin">Web Admin</a>
+		<a class="active" href="/instructions">How To Use</a>
+	</div>
+
+	<!--The Rest-->
+	<div class = "everything">
+	<h3 id = "open_heading">SG University Course Tracker</h3>
+ 	<form action = "/NUS" method = "POST">
+ 		<center><table>
+ 			<tr>
+		 		<td>
+					<div class="select-box1">
+						<div class="options-container1">
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="A-1" name="h2-grade-1" value="20" checked/>
+							<label for="A-1">A</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="B-1" name="h2-grade-1" value="17.5" />
+							<label for="B-1">B</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="C-1" name="h2-grade-1" value="15" />
+							<label for="C-1">C</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="D-1" name="h2-grade-1" value="12.5" />
+							<label for="D-1">D</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="E-1" name= "h2-grade-1" value="10" />
+							<label for="E-1">E</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="S-1" name= "h2-grade-1" value="5" />
+							<label for="S-1">S</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="U-1" name= "h2-grade-1" value="0" />
+							<label for="U-1">U</label>
+						  </div>
+				
+						  
+						</div>
+				
+						<div class="selected1">
+						  H2
+						</div>
+				
+					</div>
+				</td>
+
+				<td>
+					<div class="select-box1">
+						<div class="options-container1">
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="A-2" name="h2-grade-2" value="20" checked/>
+							<label for="A-2">A</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="B-2" name="h2-grade-2" value="17.5" />
+							<label for="B-2">B</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="C-2" name="h2-grade-2" value="15" />
+							<label for="C-2">C</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="D-2" name="h2-grade-2" value="12.5" />
+							<label for="D-2">D</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="E-2" name= "h2-grade-2" value="10" />
+							<label for="E-2">E</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="S-2" name= "h2-grade-2" value="5" />
+							<label for="S-2">S</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="U-2" name= "h2-grade-2" value="0" />
+							<label for="U-2">U</label>
+						  </div>
+				
+						  
+						</div>
+				
+						<div class="selected1">
+						  H2
+						</div>
+				
+					</div>
+				</td>
+
+				<td>
+					<div class="select-box1">
+						<div class="options-container1">
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="A-3" name="h2-grade-3" value="20" checked/>
+							<label for="A-3">A</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="B-3" name="h2-grade-3" value="17.5" />
+							<label for="B-3">B</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="C-3" name="h2-grade-3" value="15" />
+							<label for="C-3">C</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="D-3" name="h2-grade-3" value="12.5" />
+							<label for="D-3">D</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="E-3" name= "h2-grade-3" value="10" />
+							<label for="E-3">E</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="S-3" name= "h2-grade-3" value="5" />
+							<label for="S-3">S</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="U-3" name= "h2-grade-3" value="0" />
+							<label for="U-3">U</label>
+						  </div>
+				
+						  
+						</div>
+				
+						<div class="selected1">
+						  H2
+						</div>
+				
+					</div>
+				</td>
+			</tr>
+
+		</table></center><br><br>
+
+	<center><table>
+		 	<tr>
+		 		<td>
+					<div class="select-box1">
+						<div class="options-container1">
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="h1-A-1" name="h1-grade-1" value="10" checked/>
+							<label for="h1-A-1">A</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="h1-B-1" name="h1-grade-1" value="8.75" />
+							<label for="h1-B-1">B</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="-h1-C-1" name="h1-grade-1" value="7.5" />
+							<label for="-h1-C-1">C</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="h1-D-1" name="h1-grade-1" value="6.25" />
+							<label for="h1-D-1">D</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="h1-E-1" name= "h1-grade-1" value="5" />
+							<label for="h1-E-1">E</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="h1-S-1" name= "h1-grade-1" value="2.5" />
+							<label for="h1-S-1">S</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="h1-U-1" name= "h1-grade-1" value="0" />
+							<label for="h1-U-1">U</label>
+						  </div>
+				
+						  
+						</div>
+				
+						<div class="selected1">
+						  H1
+						</div>
+				
+					</div>
+				</td>
+
+				<td>
+					<div class="select-box1">
+						<div class="options-container1">
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="pw-A" name="pw-grade" value="10" checked/>
+							<label for="pw-A">A</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="pw-B" name="pw-grade" value="8.75" />
+							<label for="pw-B">B</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="-pw-C" name="pw-grade" value="7.5" />
+							<label for="-pw-C">C</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="pw-D" name="pw-grade" value="6.25" />
+							<label for="pw-D">D</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="pw-E" name= "pw-grade" value="5" />
+							<label for="pw-E">E</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="pw-S" name= "pw-grade" value="2.5" />
+							<label for="pw-S">S</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="pw-U" name= "pw-grade" value="0" />
+							<label for="pw-U">U</label>
+						  </div>
+				
+						  
+						</div>
+				
+						<div class="selected1">
+						  PW
+						</div>
+				
+					</div>
+				</td>
+
+				<td>
+					<div class="select-box1">
+						<div class="options-container1">
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="gp-A" name="gp-grade" value="10" checked/>
+							<label for="gp-A">A</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="gp-B" name="gp-grade" value="8.75" />
+							<label for="gp-B">B</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="-gp-C" name="gp-grade" value="7.5" />
+							<label for="-gp-C">C</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="gp-D" name="gp-grade" value="6.25" />
+							<label for="gp-D">D</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="gp-E" name= "gp-grade" value="5" />
+							<label for="gp-E">E</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="gp-S" name= "gp-grade" value="2.5" />
+							<label for="gp-S">S</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="gp-U" name= "gp-grade" value="0" />
+							<label for="gp-U">U</label>
+						  </div>
+				
+						  
+						</div>
+				
+						<div class="selected1">
+						  GP
+						</div>
+				
+					</div>
+				</td>
+
+				<td>
+					<div class="select-box1">
+						<div class="options-container1">
+
+						  <div class="option1">
+							<input type="radio" class="radio1" id="mtl-A" name="mtl-grade" value="10" />
+							<label for="mtl-A">A</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="mtl-B" name="mtl-grade" value="8.75" />
+							<label for="mtl-B">B</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="-mtl-C" name="mtl-grade" value="7.5" />
+							<label for="-mtl-C">C</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="mtl-D" name="mtl-grade" value="6.25" />
+							<label for="mtl-D">D</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="mtl-E" name= "mtl-grade" value="5" />
+							<label for="mtl-E">E</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="mtl-S" name= "mtl-grade" value="2.5" />
+							<label for="mtl-S">S</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="mtl-U" name= "mtl-grade" value="0" />
+							<label for="mtl-U">U</label>
+						  </div>
+
+						  <div class="option1">
+							<input type="radio" class="radio1" id="mtl-NIL" name="mtl-grade" value="NIL" checked/>
+							<label for="mtl-NIL">NIL</label>
+						  </div>
+				
+						</div>
+				
+						<div class="selected1">
+						  MTL
+						</div>
+				
+					</div>
+				</td>
+		 	</tr>
+
+	 	</table></center><br>
+
+		 <center><div id="empty-hidden-div"></div><h3 id = "hidden_heading">University Course Tracker</h3></center><br class = "hidden_br">
+
+		 <center><table class = "narrow_table">
+			 <tr>
+				<td>
+					<div class="select-box1">
+						<div class="options-container1">
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="A-1" name="h2-grade-1" value="20" checked/>
+							<label for="A-1">A</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="B-1" name="h2-grade-1" value="17.5" />
+							<label for="B-1">B</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="C-1" name="h2-grade-1" value="15" />
+							<label for="C-1">C</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="D-1" name="h2-grade-1" value="12.5" />
+							<label for="D-1">D</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="E-1" name= "h2-grade-1" value="10" />
+							<label for="E-1">E</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="S-1" name= "h2-grade-1" value="5" />
+							<label for="S-1">S</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="U-1" name= "h2-grade-1" value="0" />
+							<label for="U-1">U</label>
+						  </div>
+				
+						  
+						</div>
+				
+						<div class="selected1">
+						  H2
+						</div>
+				
+					</div>
+				</td>
+			 </tr>
+
+			 <tr>
+				<td>
+					<div class="select-box1">
+						<div class="options-container1">
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="A-2" name="h2-grade-2" value="20" checked/>
+							<label for="A-2">A</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="B-2" name="h2-grade-2" value="17.5" />
+							<label for="B-2">B</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="C-2" name="h2-grade-2" value="15" />
+							<label for="C-2">C</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="D-2" name="h2-grade-2" value="12.5" />
+							<label for="D-2">D</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="E-2" name= "h2-grade-2" value="10" />
+							<label for="E-2">E</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="S-2" name= "h2-grade-2" value="5" />
+							<label for="S-2">S</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="U-2" name= "h2-grade-2" value="0" />
+							<label for="U-2">U</label>
+						  </div>
+				
+						  
+						</div>
+				
+						<div class="selected1">
+						  H2
+						</div>
+				
+					</div>
+				</td>
+
+			 </tr>
+
+			 <tr>
+				<td>
+					<div class="select-box1">
+						<div class="options-container1">
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="A-3" name="h2-grade-3" value="20" checked/>
+							<label for="A-3">A</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="B-3" name="h2-grade-3" value="17.5" />
+							<label for="B-3">B</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="C-3" name="h2-grade-3" value="15" />
+							<label for="C-3">C</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="D-3" name="h2-grade-3" value="12.5" />
+							<label for="D-3">D</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="E-3" name= "h2-grade-3" value="10" />
+							<label for="E-3">E</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="S-3" name= "h2-grade-3" value="5" />
+							<label for="S-3">S</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="U-3" name= "h2-grade-3" value="0" />
+							<label for="U-3">U</label>
+						  </div>
+				
+						  
+						</div>
+				
+						<div class="selected1">
+						  H2
+						</div>
+				
+					</div>
+				</td>
+			 </tr>
+
+			 <tr>
+				<td>
+					<div class="select-box1">
+						<div class="options-container1">
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="h1-A-1" name="h1-grade-1" value="10" checked/>
+							<label for="h1-A-1">A</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="h1-B-1" name="h1-grade-1" value="8.75" />
+							<label for="h1-B-1">B</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="-h1-C-1" name="h1-grade-1" value="7.5" />
+							<label for="-h1-C-1">C</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="h1-D-1" name="h1-grade-1" value="6.25" />
+							<label for="h1-D-1">D</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="h1-E-1" name= "h1-grade-1" value="5" />
+							<label for="h1-E-1">E</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="h1-S-1" name= "h1-grade-1" value="2.5" />
+							<label for="h1-S-1">S</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="h1-U-1" name= "h1-grade-1" value="0" />
+							<label for="h1-U-1">U</label>
+						  </div>
+				
+						  
+						</div>
+				
+						<div class="selected1">
+						  H1
+						</div>
+				
+					</div>
+				</td>
+			 </tr>
+
+			 <tr>
+				<td>
+					<div class="select-box1">
+						<div class="options-container1">
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="pw-A" name="pw-grade" value="10" checked/>
+							<label for="pw-A">A</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="pw-B" name="pw-grade" value="8.75" />
+							<label for="pw-B">B</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="-pw-C" name="pw-grade" value="7.5" />
+							<label for="-pw-C">C</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="pw-D" name="pw-grade" value="6.25" />
+							<label for="pw-D">D</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="pw-E" name= "pw-grade" value="5" />
+							<label for="pw-E">E</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="pw-S" name= "pw-grade" value="2.5" />
+							<label for="pw-S">S</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="pw-U" name= "pw-grade" value="0" />
+							<label for="pw-U">U</label>
+						  </div>
+				
+						  
+						</div>
+				
+						<div class="selected1">
+						  PW
+						</div>
+				
+					</div>
+				</td>
+			 </tr>
+
+			 <tr>
+				<td>
+					<div class="select-box1">
+						<div class="options-container1">
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="gp-A" name="gp-grade" value="10" checked/>
+							<label for="gp-A">A</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="gp-B" name="gp-grade" value="8.75" />
+							<label for="gp-B">B</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="-gp-C" name="gp-grade" value="7.5" />
+							<label for="-gp-C">C</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="gp-D" name="gp-grade" value="6.25" />
+							<label for="gp-D">D</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="gp-E" name= "gp-grade" value="5" />
+							<label for="gp-E">E</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="gp-S" name= "gp-grade" value="2.5" />
+							<label for="gp-S">S</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="gp-U" name= "gp-grade" value="0" />
+							<label for="gp-U">U</label>
+						  </div>
+				
+						  
+						</div>
+				
+						<div class="selected1">
+						  GP
+						</div>
+				
+					</div>
+				</td>
+			 </tr>
+
+			 <tr>
+				<td>
+					<div class="select-box1">
+						<div class="options-container1">
+
+						  <div class="option1">
+							<input type="radio" class="radio1" id="mtl-A" name="mtl-grade" value="10" />
+							<label for="mtl-A">A</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="mtl-B" name="mtl-grade" value="8.75" />
+							<label for="mtl-B">B</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="-mtl-C" name="mtl-grade" value="7.5" />
+							<label for="-mtl-C">C</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="mtl-D" name="mtl-grade" value="6.25" />
+							<label for="mtl-D">D</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="mtl-E" name= "mtl-grade" value="5" />
+							<label for="mtl-E">E</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="mtl-S" name= "mtl-grade" value="2.5" />
+							<label for="mtl-S">S</label>
+						  </div>
+				
+						  <div class="option1">
+							<input type="radio" class="radio1" id="mtl-U" name= "mtl-grade" value="0" />
+							<label for="mtl-U">U</label>
+						  </div>
+
+						  <div class="option1">
+							<input type="radio" class="radio1" id="mtl-NIL" name="mtl-grade" value="NIL" checked/>
+							<label for="mtl-NIL">NIL</label>
+						  </div>
+				
+						</div>
+				
+						<div class="selected1">
+						  MTL
+						</div>
+				
+					</div>
+				</td>
+			 </tr>
+		 </table></center><br class = "hidden_br"><br class = "hidden_br">
+
+		 
+		<center>
+			<button type="submit" name = "submit" class = "btn2">NUS</button>
+			<button type="submit" name = "submit" class = "btn2" formaction="/NTU" style="margin-left: 40px; margin-right: 40px;">NTU</button>
+			<button type="submit" name = "submit" class = "btn2" formaction="/SMU">SMU</button>
+		</center><br><br class = "hidden_br">
+		
+		
+	</form>
+	
+	
+	<script src="{{ url_for('static',filename='main1.js') }}"></script>
+</body>
+</html>

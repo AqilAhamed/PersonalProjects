@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='instructions.css') }}">
+    <title>Instructions</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="/">Home</a>
+		<a class="active" href="/admin">Web Admin</a>
+	</div>
+
+    <br><br><br><br><center><p style="color:white; font-size: 40px; border: 4px solid white; width: 70%;">How to Use SG CourseTracker</p></center><br><br>
+    <center><h3>Home Page</h3></center><br>
+    <center><div id = "instr_box"><p class = "instr">Select your A-Level grade for each subject in the select boxes. Click one of the three buttons, NUS, NTU or SMU, to be directed to its respective page where your Rank Points and a table of courses you are eligible to apply for in that University will be displayed.</p></div></center>
+    <br><br><center><div id = "instr_box"><p class = "instr">There is a navigation bar at the top where you can go to the web administrator page.</p></div></center><br><br><br><br>
+
+    <center><h3>Web Admin Page</h3></center><br>
+    <center><div id = "instr_box"><p class = "instr">CRUD operations are available for all three Universities where you can retrieve existing data from the database by pressing the 'Retrieve' button, create a new record by pressing the 'Insert' button, edit existing records by pressing the 'Update' button or delete a record by pressing the 'Delete' button.</p></div></center>
+    <br><br><center><div id = "instr_box"><p class = "instr">Each record should be referenced by its ID (which can be found through retrieval) when performing CRUD operations.</p></div></center><br><br><br><br>
+</body>
+</html>

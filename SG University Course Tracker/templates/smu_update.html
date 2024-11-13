@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='update.css') }}">
+    <title>SMU - Update</title>
+</head>
+<body>
+    <div class="topnav">
+		<a class="active" href="/">Home</a>
+        <a class="active" href="/admin">Web Admin</a>
+        <a class="active" href="/admin/smu_delete">Delete</a>
+        <a class="active" href="/admin/smu_update">Update</a>
+        <a class="active" href="/admin/smu_insert">Insert</a>
+        <a class="active" href="/admin/smu_retrieve">Retrieve</a>
+	</div><br><br><br><br><br>
+
+    <center><div id = "instr_box"><p class = "instr">Instructions: Key in the ID of the record you want to edit (which can be found through retrieval) and key in the new updated value.</p></div></center><br><br>
+    <form action="/admin/smu_update" method="POST">
+        <div class="box">
+            <center><p style="color:white; font-size: 25px; margin:0;">EDIT COURSE</p></center>
+            <label for="id-update">ID:</label><br><br>
+            <input type="number" name="id-update" min=1 class="id-update"><br><br><br>
+        
+            <label for="course">Updated Course:</label><br><br>
+            <input type="text" name="course" class="text"><br><br><br>
+
+            <center><button type="submit" name = "submit" class = "btn2">Update</button></center>
+        </div><br><br><br>
+    </form>
+    
+    <form action="/admin/smu_update" method="POST">
+        <div class="box">
+            <center><p style="color:white; font-size: 25px; margin:0;">EDIT RANK POINTS</p></center>
+            <label for="id-update">ID:</label><br><br>
+            <input type="number" name="id-update" min=1 class="id-update"><br><br><br>
+
+            <label for="rp">Updated RP:</label><br><br>
+            <input type="number" min="0" max="90" step="0.25" name="rp" class="rp"><br><br><br>
+
+            <center><button type="submit" name = "submit" class = "btn2">Update</button></center>
+        </div><br><br><br><br>
+    </form>
+</body>
+</html>
