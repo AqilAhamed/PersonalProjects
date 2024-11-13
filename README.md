@@ -3,6 +3,8 @@
 ### SG University Course Tracker
 https://sgunicoursetracker.onrender.com
 
+Disclaimer: Website link above might take a while to load as it's deployed on a free account on Render.com which takes up to 50 seconds to load web app after 15 minutes of inactivity
+
 SG University Course Tracker is a webapp that asks users to key in their A-Level Grades which then returns their rank points and the courses they are eligible for in NUS, NTU and SMU. Front-end is created with HTML, CSS and a bit of Javascript. As for the back-end, I used Flask framework coding with Python. The webapp is deployed through Render.
 
 ### POS Invoice Cost Convertor
