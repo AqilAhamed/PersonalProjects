@@ -3,9 +3,9 @@
 ### SG University Course Tracker
 https://sgunicoursetracker.onrender.com
 
-Disclaimer: Website link above might take a while to load as it's deployed on a free account on Render.com which takes up to 50 seconds to load web app after 15 minutes of inactivity
-
 SG University Course Tracker is a webapp that asks users to key in their A-Level Grades which then returns their rank points and the courses they are eligible for in NUS, NTU and SMU. Front-end is created with HTML, CSS and a bit of Javascript. As for the back-end, I used Flask framework coding with Python. The webapp is deployed through Render.
+
+Disclaimer: Website link above might take a while to load as it's deployed on a free account on Render.com which takes up to 50 seconds to load web app after 15 minutes of inactivity
 
 ### POS Invoice Cost Convertor
 I created this program to help my father's business. He usually imports goods from Malaysia for his shop in Singapore. However, the cost of each product is in malaysian currency in the invoice sent by the supplier. My father used to individually convert the cost to singapore currency and upload each item into the database in his POS account. To tackle this, I made this Python script whereby it filters the product name, it's barcode number and it's cost from the invoice, converts each product's cost into SGD and uploads all of this data into the template excel sheet neatly. Then, my father would only have to upload that excel sheet into his POS and all the entries for his products would be automatically updated in the database. This Python script aided my father greatly and he uses it regularly in his business now.
