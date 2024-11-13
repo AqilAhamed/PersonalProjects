@@ -1,0 +1,52 @@
+body {
+    background-color: #1D1D1D;
+	margin: 0;
+	padding: 0;
+    font-family: lexend;
+}
+
+
+h3 {
+	font-family: Lexend;
+  font-weight: 600;
+  font-size: 28px;
+    color: #1D1D1D;
+  background-color: #08FDD8;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 50%;
+}
+
+.instr {
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+  }
+  
+  #instr_box {
+    margin: 0;
+    margin-left: 40px;
+    padding: 6px;
+    width: 850px;
+  }
+
+  .topnav a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  
+  .topnav a:hover {
+    background-color: #08FDD8;
+    color: #1D1D1D;
+  }

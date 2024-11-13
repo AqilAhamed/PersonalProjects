@@ -1,0 +1,55 @@
+body {
+	background-color: #1D1D1D;
+	margin: 0;
+	padding: 0;
+    font-family: lexend;
+    font-weight: 400;
+}
+
+
+table {
+    font-family: Lexend;
+    border-collapse: collapse;
+    width: 87%;
+  }
+  
+td, th {
+    border: 2px solid #08FDD8;
+    padding: 12px;
+    color: white;
+    font-size: 18px;
+  }
+
+  .instr {
+    margin: 0;
+    padding: 0;
+    color: #1D1D1D;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  #instr_box {
+    margin: 0;
+    padding: 6px;
+    background-color: #08FDD8;
+    width: 850px;
+  }
+
+  .topnav a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  
+.topnav a:hover {
+    background-color: #08FDD8;
+    color: #1D1D1D;
+  }
+
+  
