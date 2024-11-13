@@ -3,7 +3,7 @@
 ### SG University Course Tracker
 https://sgunicoursetracker.onrender.com
 
-SG University Course Tracker is a webapp that asks users to key in their A-Level Grades which then returns their rank points and the courses they are eligible for in NUS, NTU and SMU. Front-end is created with HTML, CSS and a bit of Javascript. As for the back-end, it runs on Flask and Python. The webapp is deployed through Heroku.
+SG University Course Tracker is a webapp that asks users to key in their A-Level Grades which then returns their rank points and the courses they are eligible for in NUS, NTU and SMU. Front-end is created with HTML, CSS and a bit of Javascript. As for the back-end, I used Flask framework coding with Python. The webapp is deployed through Render.
 
 ### Automated Typewriter Bot
 To explore automation, I had created a typeracing bot using Python with selenium and pyautogui that automatically opens up a web browser, goes to TypeRacer.com and types the paragraph that needs to be typed out at high speeds. I have made it for multiplayer races as well where the user has to key in the string "go" in the python terminal when the race is about to start.
