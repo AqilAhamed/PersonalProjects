@@ -1,7 +1,7 @@
 # Personal Projects
 
 ### SG University Course Tracker
-[https://sgunicoursetracker.onrender.com]
+https://sgunicoursetracker.onrender.com
 
 SG University Course Tracker is a webapp that asks users to key in their A-Level Grades which then returns their rank points and the courses they are eligible for in NUS, NTU and SMU. Front-end is created with HTML, CSS and a bit of Javascript. As for the back-end, it runs on Flask and Python. The webapp is deployed through Heroku.
 
