@@ -9,7 +9,7 @@ SG University Course Tracker is a webapp that asks users to key in their A-Level
 To explore automation, I had created a typeracing bot using Python with selenium and pyautogui that automatically opens up a web browser, goes to TypeRacer.com and types the paragraph that needs to be typed out at high speeds. I have made it for multiplayer races as well where the user has to key in the string "go" in the python terminal when the race is about to start.
 
 ### Login System
-To understand more about databases, I created a simple login system website where users can create an account by asking for their names, emails and asks them to create a password. Then they can sign in into their account. This is done by data being stored on a database where data is created when a new account is created and data is retrieved when a user with an existing account logs in. Currently working on changing database from a CSV file to a SQL database.
+To understand more about databases, I created a simple login system website where users can create an account by asking for their names, emails and asks them to create a password. Then they can sign in into their account. This is done by data being stored on a database where data is created when a new account is created and data is retrieved when a user with an existing account logs in.
 
 Disclaimer: The front-end of the index.html file is a free template taken from an online source with a few minor changes I had made to suit this project. Only the back-end and the other html files were developed by me.
 
