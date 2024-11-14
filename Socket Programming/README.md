@@ -1,4 +1,5 @@
 Assigment for class:
+
 Using socket programming, write the client program for the evacuee teams (client) in Afghanistan and the A330 MRTT plane (server) to communicate. The program should
 - use the above queue data structure to manage the requests
 - request the user to set a password for encryption at the start of the program
