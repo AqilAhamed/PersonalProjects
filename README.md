@@ -20,3 +20,6 @@ Disclaimer: The front-end of the index.html file is a free template taken from a
 
 ### Guess the Secret Number Game
 A game that asks the player to guess a secret randomly generated number. Coded using Python.
+
+### Leave Automation Web App
+Applying for leaves on a google form every month in NS was a tedious and repeated task. Hence, I created this webapp where you input your leaves in a txt file beforehand, and all you do is run it on the site where in the backend, the script uses selenium to input the leaves of the user's choice automatically and submits it.
