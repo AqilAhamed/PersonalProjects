@@ -7,6 +7,13 @@ SG University Course Tracker is a webapp that asks users to key in their A-Level
 
 Disclaimer: Website link above might take a while to load as it's deployed on a free account on Render.com which takes up to 50 seconds or more to load web app after 15 minutes of inactivity.
 
+### AI Essays Detector | Machine Learning Project
+https://ai-essays-detector.onrender.com/
+
+I built a machine learning model that detects whether a piece of text is AI-generated or human-written using the Kaggle AI vs Human Text dataset. I engineered several stylometric features such as burstiness, comma_density, pronoun_density, contraction_density, and repeated_phrase_density, combined them with TF-IDF vectors, and trained a logistic regression classifier in Jupyter Notebook. Finally, I wrapped the model in a Flask app, saved my TF-IDF, scaler, and model with joblib, and deployed the web app to Render so users can paste text and instantly see my model’s prediction.
+
+Disclaimer: Website link above might take a while to load as it's deployed on a free account on Render.com which takes up to 50 seconds or more to load web app after 15 minutes of inactivity.
+
 ### POS Invoice Cost Convertor
 I created this program to help my father's business. He usually imports goods from Malaysia for his shop in Singapore. However, the cost of each product is in Malaysia’s currency in the invoice sent by the supplier. My father used to individually convert the cost to Singapore’s currency and upload each item into the database in his POS account. To tackle this, I made this Python script whereby it filters the product name, it's barcode number and it's cost from the invoice, converts each product's cost into Singapore’s currency and uploads all of this data into the template excel sheet neatly. Then, my father would only have to upload that excel sheet into his POS and all the entries for his products would be automatically updated in the database. This Python script aided my father greatly and he uses it regularly in his business now.
 
