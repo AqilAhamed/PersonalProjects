@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Essays Detector</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'DM Sans', sans-serif;
+      max-width: 750px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: #141414;
+      color: #e0e0e0;
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 52px;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      margin-bottom: 5px;
+      color: #ffffff;
+    }
+
+    p.subtitle {
+      color: #888;
+      margin-bottom: 25px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 200px;
+      padding: 12px;
+      font-size: 14px;
+      font-family: 'DM Sans', sans-serif;
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+      border: 1px solid #333;
+      border-radius: 6px;
+      resize: vertical;
+      box-sizing: border-box;
+    }
+
+    textarea:focus {
+      outline: none;
+      border-color: #555;
+    }
+
+    .buttons {
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 10px 22px;
+      font-size: 14px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      cursor: pointer;
+      border-radius: 6px;
+      border: 1px solid #444;
+    }
+
+    #analyze-btn {
+      background-color: #2f80ed;
+      color: white;
+      border: none;
+      margin-right: 8px;
+    }
+
+    #analyze-btn:hover { background-color: #1a6fd4; }
+
+    #clear-btn {
+      background-color: #1e1e1e;
+      color: #aaa;
+    }
+
+    #clear-btn:hover { background-color: #2a2a2a; }
+
+    .results {
+      margin-top: 25px;
+      background: #1e1e1e;
+      border: 1px solid #2e2e2e;
+      border-radius: 6px;
+      padding: 22px;
+    }
+
+    .verdict {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 32px;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      margin-bottom: 5px;
+    }
+
+    .verdict.ai { color: #e05c5c; }
+    .verdict.human { color: #4caf82; }
+
+    .probability {
+      color: #888;
+      margin-bottom: 18px;
+      font-size: 14px;
+    }
+
+    .bar-container {
+      background: #2a2a2a;
+      border-radius: 4px;
+      height: 10px;
+      margin-bottom: 6px;
+    }
+
+    .conf-bar {
+      height: 10px;
+      border-radius: 4px;
+    }
+
+    .conf-bar.ai { background-color: #e05c5c; }
+    .conf-bar.human { background-color: #4caf82; }
+
+    .bar-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: #666;
+    }
+
+    @media (max-width: 500px) {
+      body { margin: 24px auto; }
+
+      h1 { font-size: 38px; }
+
+      .buttons { display: flex; flex-direction: column; gap: 8px; }
+
+      #analyze-btn, #clear-btn { width: 100%; margin-right: 0; }
+
+      a { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>AI Essays Detector</h1>
+<p class="subtitle">Paste any text below to check if it was written by AI or a human.</p>
+
+<form method="POST" action="/">
+  <textarea name="text" placeholder="Paste your text here...">{{ input_text }}</textarea>
+
+  <div class="buttons">
+    <button id="analyze-btn" type="submit">Analyze</button>
+    <a href="/"><button id="clear-btn" type="button">Clear</button></a>
+  </div>
+</form>
+
+{% if result %}
+<div class="results">
+  <div class="verdict {{ 'ai' if result.is_ai else 'human' }}">
+    {{ result.label }}
+  </div>
+
+  <div class="probability">
+    Probability: {{ result.ai_pct if result.is_ai else result.human_pct }}%
+  </div>
+
+  <div class="bar-container">
+    <div class="conf-bar {{ 'ai' if result.is_ai else 'human' }}" style="width: {{ result.ai_pct }}%;"></div>
+  </div>
+  <div class="bar-labels">
+    <span>AI: {{ result.ai_pct }}%</span>
+    <span>Human: {{ result.human_pct }}%</span>
+  </div>
+</div>
+{% endif %}
+
+</body>
+</html>
